@@ -1,0 +1,742 @@
+/*--------------------pagina principal index-------------------------*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",sans-serif;
+}
+
+body{
+    background:#111;
+}
+
+/* HERO */
+
+
+.hero-content h1{
+    color: #ff3b3b; /* rojo Mario */
+}
+
+.hero{
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,.6),
+    rgba(0,0,0,.6)),
+    url("imagenes/fondo-mario.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    flex-direction:column;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:25px 8%;
+}
+
+.logo{
+    font-size:1.8rem;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero-content{
+    flex:1;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content h1{
+    max-width:900px;
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    max-width:700px;
+    font-size:1.2rem;
+    color:#ddd;
+}
+
+.btn{
+    margin-top:30px;
+
+    text-decoration:none;
+    color:white;
+
+    background:#e60012;
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+    background:#ff2134;
+}
+
+/* CONTENEDORES */
+
+.menu-cards{
+    width:90%;
+    max-width:1400px;
+
+    margin:auto;
+    padding:100px 0;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#1f1f1f;
+
+    border-radius:20px;
+
+    padding:35px;
+    text-align:center;
+
+    transition:.4s;
+
+    border:1px solid rgba(255,255,255,.1);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 40px rgba(230,0,18,.5);            /*transformador, visulmente queda mejor*/
+}
+
+.card span{
+    font-size:4rem;
+}
+
+.card h3{
+    margin:20px 0;
+    color:#ff3b3b;
+}
+
+.card p{
+    color:#cfcfcf;
+}
+
+
+/* ---------------------pagina de curiosidades---------------------- */
+
+.curiosidad-poder{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+}
+
+.poder-imagen{
+    width: 50%;
+    background: rgb(254, 245, 245);             /*hago dos contenedores en blanco y negro que dividen la pantalla*/
+    padding: 40px 60px;
+
+    display: flex;
+    border-radius: 15px;
+    gap:25px;
+    flex-direction: column;
+    justify-content: center;
+}
+.poder-imagen p{
+    color: black;
+}
+.poder-imagen h1{
+    color: black;
+}
+
+.poder-texto{
+    width: 50%;
+    background: #1e1e1e;
+    color: rgb(221, 220, 220);
+
+    padding: 20px 30px;
+
+    display: flex;
+    border-radius: 15px;
+    gap:25px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.izquierda1{
+    width: 50%;
+    background: #1e1e1e;
+    color: white;                               
+    padding: 20px 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.derecha2{
+    width: 50%;
+    background: #1e1e1e;
+    color: white;
+
+    padding: 40px 60px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imagenes-tubo{
+    display: flex;
+    gap: 10px;
+}
+
+.img-tubo,
+.img-tubo2{
+    width: 50%;
+    height: auto;
+}
+
+
+.img-correr{
+    width: 100%;
+}
+
+.img-tubo{
+    width: 45%;
+}
+.img-tubo2{
+    width: 55%;
+}
+.img-tubo3{
+    width: 110%;
+}
+.img-extras{
+    width: 110%
+}
+.img-cuidado{
+    width: 110%;
+}
+    
+.volver1{
+    background:#ffffff;
+    border-radius:15px;
+    padding:30px;
+
+    width:100%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin-top:15px;
+}
+
+
+.parte2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+}
+
+.blanco{
+    width: 50%;
+    background: rgb(254, 245, 245);                 /*dos contenedores blanco y negro pero de abajo*/
+    padding: 40px 60px;
+
+    display: flex;
+    gap:25px;
+    border-radius: 15px;
+    margin-top: 15px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.texto-pauline{
+    color: black;
+}
+
+.negro{
+    width: 50%;
+    background: #1e1e1e;
+    color: rgb(221, 220, 220);
+
+    padding: 20px 30px;
+
+    display: flex;
+    gap:25px;
+    border-radius: 15px;
+    margin-top: 15px;
+    flex-direction: column;
+    justify-content: center;
+}
+.video-mario{
+    width: 70%;
+    height: 300px;
+    border: none;
+}
+
+.curiosidad1 {
+  width: 200px;
+  height: 180px;
+}
+
+.contenido-superior {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.contenido-inferior{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+
+
+
+
+
+/*--------------------------pagina de jefes-----------------------------*/
+
+body{
+    background:#111;
+    color:white;
+    padding:30px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+/*priemer jefe*/
+
+.jefe{
+    background:#2a2a2a;
+    border-radius:15px;
+    padding:30px;
+
+    display:flex;
+    gap:25px;
+}
+
+/* COLUMNA IZQUIERDA */
+
+.info{
+    width:35%;
+}
+
+.titulo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.barra{
+    width:12px;
+    height:50px;
+    background:red;
+    border-radius:5px;
+}
+
+.titulo h1{
+    font-size:3rem;
+}
+
+.info p{
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+/* CENTRO */
+
+.capturas{
+    width:30%;
+
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.capturas img{
+    width:100%;
+    border-radius:12px;
+    border:3px solid white;
+}
+
+/* DERECHA */
+
+.jefe-img{
+    width:35%;
+
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+}
+
+.jefe-img img{
+    width:100%;
+    max-width:400px;
+}
+
+/* PARTE INFERIOR */
+
+.reino{
+    margin-top:30px;
+
+    background:white;
+    color:black;
+
+    padding:30px;
+    border-radius:15px;
+}
+
+.reino h2{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.reino p{
+    line-height:1.8;
+}
+
+/* ========================= */
+/* MADAME BROODE */
+/* ========================= */
+
+.jefe2{
+    background:#2a2a2a;
+    border-radius:15px;
+    padding:30px;
+
+    margin-top:40px;
+
+    display:flex;
+    gap:30px;
+}
+
+.jefe2-izquierda{
+    width:65%;
+}
+
+.jefe2-izquierda p{
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.jefe2-derecha{
+    width:35%;
+
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.jefe2-derecha img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+
+    border-radius:12px;
+    border:3px solid white;
+}
+
+.jefe2-principal{
+    margin-top:20px;
+    text-align:center;
+}
+
+.jefe2-principal img{
+    width:50%;
+    max-width:550px;
+}
+
+/* ========================= */
+/* HARRIET */
+/* ========================= */
+
+.jefe3{
+    background:#2a2a2a;
+    border-radius:15px;
+    padding:30px;
+
+    margin-top:40px;
+
+    display:flex;
+    gap:30px;
+}
+
+.jefe3-texto{
+    width:70%;
+}
+
+.jefe3-texto p{
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.harriet-img{
+    margin-top:25px;
+    text-align:left;
+}
+
+.harriet-img img{
+    width:250px;
+}
+
+.harriet-capturas{
+    width:30%;
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.harriet-capturas img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+
+    border-radius:12px;
+    border:3px solid white;
+}
+
+.volver{
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+
+    width: 100%;
+    margin-top: 0;
+
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.letra-volver{
+    color:#111
+}
+
+/*--------------------------pagina de trajes-----------------------------*/
+
+
+body{
+    background:#111;
+    color:white;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:40px;
+}
+
+/* FILA DE TRAJES */
+
+.fila-trajes{
+    display:flex;
+    gap:25px;
+    margin-bottom:40px;
+}
+
+/* TARJETA */
+
+.traje{
+    flex:1;
+    background:#222;
+    border-radius:15px;
+    padding:20px;
+}
+
+.traje h2{
+    margin-bottom:15px;
+    color:#ff3b3b;
+}
+
+.item{
+    display:flex;
+    gap:10px;
+    margin-bottom:10px;
+}
+
+.item img{
+    width:80px;
+    height:80px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+.item-info h3{
+    font-size:1rem;
+    margin-bottom:5px;
+}
+
+.item-info p{
+    font-size:0.9rem;
+}
+
+.mario-traje{
+    margin-top:15px;
+    text-align:center;
+}
+
+.mario-traje img{
+    width:250px;
+    max-width:100%;
+}
+
+
+/*-------------------------RESPONSIVE TABLET------------------------------------*/
+
+
+@media (max-width: 1024px){
+
+    .hero-content h1{
+        font-size:3rem;
+    }
+
+    .curiosidad-poder,
+    .parte2{
+        height:auto;
+    }
+
+    .poder-imagen,
+    .poder-texto,
+    .blanco,
+    .negro{
+        width:100%;
+    }
+
+    .fila-trajes{
+        flex-wrap:wrap;
+    }
+
+    .traje{
+        min-width:300px;
+    }
+
+    .jefe,
+    .jefe2,
+    .jefe3{
+        flex-direction:column;
+    }
+
+    .info,
+    .capturas,
+    .jefe-img,
+    .jefe2-izquierda,
+    .jefe2-derecha,
+    .jefe3-texto,
+    .harriet-capturas{
+        width:100%;
+    }
+
+    .video-mario{
+        width:100%;
+    }
+}
+
+
+/*--------------------------RESPONSIVE MÓVIL------------------------------*/
+
+@media (max-width: 768px){
+
+    nav{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    nav ul{
+        flex-direction:column;
+        text-align:center;
+        gap:15px;
+    }
+
+    .hero-content h1{
+        font-size:2.2rem;
+    }
+
+    .hero-content p{
+        font-size:1rem;
+    }
+
+    .poder-texto{
+        flex-direction:column;
+    }
+
+    .izquierda1,
+    .derecha2{
+        width:100%;
+        padding:20px;
+    }
+
+    .contenido-superior,
+    .contenido-inferior{
+        flex-direction:column;
+    }
+
+    .video-mario{
+        width:100%;
+        height:250px;
+    }
+
+    .curiosidad1{
+        width:100%;
+        max-width:300px;
+        height:auto;
+    }
+
+    .img-tubo3,
+    .img-extras,
+    .img-cuidado{
+        width:100%;
+    }
+
+    .titulo h1{
+        font-size:2rem;
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
+    .jefe2-principal img{
+        width:100%;
+    }
+
+    .harriet-img img{
+        width:100%;
+        max-width:250px;
+    }
+
+    .mario-traje img{
+        width:180px;
+    }
+}
